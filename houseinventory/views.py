@@ -5,7 +5,7 @@ from django.template.loader import render_to_string
 from articles.models import Article
 from random import randint
 
-def home_view(request):
+def home_view(request, *args, **kwargs):
     random_id = randint(1, 3)
     print(f"randint: {random_id}")
     article_obj = Article.objects.get(id=random_id)
