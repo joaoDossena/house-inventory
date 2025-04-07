@@ -51,6 +51,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'houseinventory.urls'
+LOGIN_URL = '/login/'
 
 TEMPLATES = [
     {
