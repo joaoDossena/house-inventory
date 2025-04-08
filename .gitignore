@@ -11,3 +11,8 @@ lib64
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
+
+# Commitizen
+package-lock.json
+package.json
+node_modules/
