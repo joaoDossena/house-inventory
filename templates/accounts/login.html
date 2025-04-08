@@ -5,15 +5,7 @@
 {% if not request.user.is_authenticated %}
 <div style="margin-top: 30px;">
     <form method="POST">{% csrf_token %}
-        {% if error %}
-            <p style="color: red;">{{ error }}</p>
-        {% endif %}
-        <div style="margin-top: 10px;">
-            <input type="text" name="username" placeholder="Username" />
-        </div>
-        <div style="margin-top: 10px;">
-            <input type="password" name="password" placeholder="Password"/>
-        </div>
+        {{ form.as_p }}
         <button type="submit" style="margin-top: 10px;">Login</button>
     </form>
     <p>Need an account? Please <a href="/register">Register</a></p>
