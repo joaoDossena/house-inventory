@@ -16,3 +16,6 @@ db.sqlite3-journal
 package-lock.json
 package.json
 node_modules/
+
+# Environment variables
+.env
