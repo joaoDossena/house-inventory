@@ -1,2 +1,4 @@
 Django==5.1.7
 django-dotenv
+gunicorn
+psycopg2-binary
